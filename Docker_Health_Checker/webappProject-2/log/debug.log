@@ -1,0 +1,5 @@
+WARNING 2022-08-02 10:36:24,355 views 10 Message for warning
+ERROR 2022-08-02 10:36:24,356 views 11 Message for error
+CRITICAL 2022-08-02 10:36:24,356 views 12 Message for critical error
+INFO 2022-08-02 10:36:24,358 views 13 Message for information
+DEBUG 2022-08-02 10:36:24,358 views 14 Message for debug

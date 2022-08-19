@@ -1,0 +1,24 @@
+import os
+
+# os.chdir('.')
+# cur_dir = os.getcwd()
+# contents = os.listdir()
+# os.mkdir("Temp")
+# os.makedirs("Temp/temp1/temp2/")
+# os.rmdir("Temp")
+# os.rename("Temp","Temp11")
+
+# for root, subFolder, files in os.walk('.'):
+#     for item in files:
+#         if(item.endswith(".py")):
+#             print(item)
+
+# if(os.path.isdir("C:\\Users\\lenovo\\Desktop\\")):
+#     print("This is directory")
+# else:
+#     print("This is NOT a directory")
+
+# if(os.path.isfile("./deneme.py")):
+#     print("This is file")
+# else:
+#     print("This is NOT a file")

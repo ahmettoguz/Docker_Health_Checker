@@ -1,0 +1,34 @@
+---
+- name: Create a log detector container
+  docker:
+    name: findlogs
+    image: findlogs:latest
+    volumes:
+      - logVolume:/logVolume
+  become: yes
+
+- name: Copy detector file to volume
+  command: cp detect_logs.py ../logVolume
+  become: yes
+
+- name: move to root
+  command: cd ..
+  become: yes
+# *****************************************************
+
+- name: Create a container to observe
+  docker:
+    name: python-django-version1
+    image: python-django-version1:latest
+    volumes:
+      - logVolume:/logVolume
+  become: yes
+
+- name: Copy observe folder to volume
+  command: cp python-django-version1 logVolume
+  become: yes
+# ******************************************************
+
+- name: run log detector
+  command: python detect_logs.py
+  become: yes
